@@ -113,4 +113,4 @@
    + [VITE安装及创建项目](https://blog.csdn.net/bakelFF/article/details/124672187)
 
 ### 协同开发环境构建
-请参照[研发环境构建指北](http://172.16.67.180:5000/help/services)完成代码管理和文件管理环境构建。
+请参照[研发环境构建指北](./guidance/services.md)完成代码管理和文件管理环境构建。
