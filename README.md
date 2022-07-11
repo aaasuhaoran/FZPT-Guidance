@@ -113,8 +113,10 @@
      `cnpm install -g @vue/cli`
    + [调整VUE版本](https://blog.csdn.net/weixin_43279985/article/details/104841143)
 6. 使用**VUE-CLI**创建项目
-   + 3.0以下版本vue-cli创建项目：`vue init webpack projectName`
-   + 3.0以上版本vue-cli创建项目：`vue create projectName`
+   + 3.0以下版本vue-cli创建项目：<br/>
+     `vue init webpack projectName`
+   + 3.0以上版本vue-cli创建项目：<br/>
+     `vue create projectName`
    + [如何创建VUE项目](https://www.cnblogs.com/plBlog/p/13968242.html)
    + [VITE安装及创建项目](https://blog.csdn.net/bakelFF/article/details/124672187)
 
