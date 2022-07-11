@@ -29,9 +29,9 @@
 
 ### 了解卫通
 #### 登录公司官网，了解公司大致发展情况
-  + URL（Homepage）：http://www.chinasatcom.com/
-  + URL（Satellites）：http://www.chinasatcom.com/n782704/n3412226/index.html
-  + URL（Leaders，看见本人记得称职务）：http://www.chinasatcom.com/n782699/n782749/index.html
+  + **URL（Homepage）**：http://www.chinasatcom.com/
+  + **URL（Satellites）**：http://www.chinasatcom.com/n782704/n3412226/index.html
+  + **URL（Leaders，看见本人记得称职务!）**：http://www.chinasatcom.com/n782699/n782749/index.html
   + 公司简介
     + **中国卫通集团股份有限公司（简称：中国卫通）是中国航天科技集团有限公司从事卫星运营服务业的核心专业子公司，具有国家基础电信业务经营许可证和增值电信业务经营许可证，是我国唯一拥有通信卫星资源且自主可控的卫星通信运营企业，被列为国家一类应急通信专业保障队伍**。2019年6月28日，中国卫通成功登陆上交所主板挂牌交易，**股票代码：601698**。<br/>
     + 中国卫通运营管理着**15颗**优质的在轨民商用通信广播卫星，覆盖中国全境、澳大利亚、东南亚、南亚、中东以及欧洲、非洲等地区。公司拥有完善的基础设施、可靠的测控系统、优秀的专业化团队、卓越的系统集成和7X24小时全天候高品质服务能力，为广大民众提供安全稳定的广播电视信号传输，为国家政府部门和重要行业客户提供专属服务，为重大活动和抢险救灾等突发事件提供及时可靠的通信保障，赢得了广大客户的好评和高度信赖，树立了良好信誉和品牌形象。<br/> 
@@ -85,22 +85,23 @@
      + [Pycharm环境配置](https://blog.csdn.net/m0_65100075/article/details/125080083)
    + 方案2：安装[Visual Studio Code](https://code.visualstudio.com/)
      + [【超好用】Visual Studio Code 配置Python环境](https://blog.csdn.net/qq_46092061/article/details/122438823)
-3. 开启IDE，完成环境配置并运行
+3. 开启IDE，[完成环境配置](http://www.360doc.com/content/22/0401/17/6194394_1024386878.shtml)并运行
 
 #### **JAVA**开发环境构建
 1. 安装[JRE和JDK](https://www.oracle.com/java/technologies/downloads/#java8)
-2. 安装[IntelliJ IDEA](https://www.jetbrains.com/idea/)
+2. 配置[JRE和JDK](https://blog.csdn.net/m0_54158068/article/details/124415131)
+3. 安装[IntelliJ IDEA](https://www.jetbrains.com/idea/)
    + [IDEA创建学生账号](https://blog.csdn.net/hhh_ainihxh/article/details/80507179) 
-3. 开启IDE，完成环境配置并运行
+4. 开启IDE，[完成环境配置](https://www.ngui.cc/51cto/show-734506.html)并运行
 
 #### **VUE**开发环境构建
 1. 安装[Node.js](http://nodejs.cn/download/)
 2. 设置全局依赖包存放路径和缓存文件路径
    + 设置缓存文件路径：`npm config set cache "D:\'installPath'\nodejs\node_cache"`
    + 全局依赖包存放路径：`npm config set prefix "D:\'installPath'\nodejs\node_global"`
-3. 安装cnpm（淘宝镜像）
+3. 安装cnpm（淘宝镜像）<br/>
    `npm install -g cnpm --registry=https://registry.npm.taobao.org`
-4. 安装**VUE**
+4. 安装**VUE**<br/>
    `cnpm install vue -g`
 5. 安装**VUE-CLI**脚手架
    + 安装3.0以下版本：`cnpm install vue-cli -g`
