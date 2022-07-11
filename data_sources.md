@@ -1,0 +1,110 @@
+# 卫星波束数据库环境部署
++ Created on 2022.04.14
++ Finished on
+
++ @author: Haoran Su
+
+## 安装PostgreSQL 12
+
++ 下载地址：[https://www.enterprisedb.com/postgresql-tutorial-resources-training?uuid=03b13357-9281-4985-baea-17b72a0febc3&amp;campaignId=7012J000001F5IIQA0](https://www.enterprisedb.com/postgresql-tutorial-resources-training?uuid=03b13357-9281-4985-baea-17b72a0febc3&campaignId=7012J000001F5IIQA0)
++ 点击安装程序逐步安装即可
+
+## 安装PostGIS 3.1.4
+
++ 下载地址：[http://download.osgeo.org/postgis/windows/pg12/postgis-bundle-pg12x64-setup-3.1.4-1.exe](http://download.osgeo.org/postgis/windows/pg12/postgis-bundle-pg12x64-setup-3.1.4-1.exe)
++ 点击安装程序逐步安装即可，中间需要选择postgresql12的安装目录
+
+## 导入数据
+1. 新建数据库VGIS，启用postgis，sql编辑器窗口输入：
+
+```
+-- Enable PostGIS (as of 3.0 contains just geometry/geography)
+CREATE EXTENSION postgis;
+-- enable raster support (for 3+)
+CREATE EXTENSION postgis_raster;
+-- Enable Topology
+CREATE EXTENSION postgis_topology;
+-- Enable PostGIS Advanced 3D
+-- and other geoprocessing algorithms
+-- sfcgal not available with all distributions
+CREATE EXTENSION postgis_sfcgal;
+-- fuzzy matching needed for Tiger
+CREATE EXTENSION fuzzystrmatch;
+-- rule based standardizer
+CREATE EXTENSION address_standardizer;
+-- example rule data set
+CREATE EXTENSION
+address_standardizer_data_us;
+-- Enable US Tiger Geocoder
+CREATE EXTENSION postgis_tiger_geocoder;
+```
+
+2. 在sql编辑器中，创建数据表sat_beam_whole和sat_freq_plan，sql编辑器中输入：
+
+```
+-- sat_beam_whole建表
+
+-- analysis.sat_beam_whole definition
+
+-- Drop table
+
+-- DROP TABLE analysis.sat_beam_whole;
+
+CREATE TABLE analysis.sat_beam_whole (
+	id smallserial NOT NULL, -- 序号
+	sat_name_en varchar(16) NULL, -- 卫星英文名称
+	"operator" varchar(64) NULL, -- 卫星运营商
+	beam_freq_band varchar(16) NULL, -- 波束频段
+	band_name_en varchar(64) NULL, -- 波束英文名称
+	band_name_ch varchar(64) NULL, -- 波束中文名称
+	geom geometry NULL, -- 波束覆盖geom数据
+	beam_eirp float8 NULL, -- 波束EIRP值
+	beam_file_name varchar(64) NULL, -- 波束shapefile文件标识
+	beam_bandwidth float8 NULL, -- 波束带宽
+	hts_beam_id varchar NULL,
+	freq_detail varchar(32) NULL,
+	beam_type varchar(4) NULL,
+	CONSTRAINT sat_beam_pk_1 PRIMARY KEY (id)
+);
+
+-- Column comments
+
+COMMENT ON COLUMN analysis.sat_beam_whole.id IS '序号';
+COMMENT ON COLUMN analysis.sat_beam_whole.sat_name_en IS '卫星英文名称';
+COMMENT ON COLUMN analysis.sat_beam_whole."operator" IS '卫星运营商';
+COMMENT ON COLUMN analysis.sat_beam_whole.beam_freq_band IS '波束频段';
+COMMENT ON COLUMN analysis.sat_beam_whole.band_name_en IS '波束英文名称';
+COMMENT ON COLUMN analysis.sat_beam_whole.band_name_ch IS '波束中文名称';
+COMMENT ON COLUMN analysis.sat_beam_whole.geom IS '波束覆盖geom数据';
+COMMENT ON COLUMN analysis.sat_beam_whole.beam_eirp IS '波束EIRP值';
+COMMENT ON COLUMN analysis.sat_beam_whole.beam_file_name IS '波束shapefile文件标识';
+COMMENT ON COLUMN analysis.sat_beam_whole.beam_bandwidth IS '波束带宽';
+```
+
+```
+-- sat-beam-freqplan建表
+
+-- analysis.sat_beam_freqplan definition
+
+-- Drop table
+
+-- DROP TABLE analysis.sat_beam_freqplan;
+
+CREATE TABLE analysis.sat_beam_freqplan (
+	id int2 NOT NULL DEFAULT nextval('analysis.sat_beam_freqplan_1_id_seq'::regclass),
+	sat_name varchar(32) NULL,
+	beam_index varchar(32) NULL,
+	beam_name_cn varchar(32) NULL,
+	beam_freq varchar(32) NULL,
+	beam_freq_type varchar(32) NULL,
+	hts bool NULL,
+	beam_bandwidth int2 NULL,
+	trans_num int2 NULL,
+	note varchar NULL,
+	beam_name_en varchar NULL,
+	hts_beam_id varchar NULL
+);
+CREATE UNIQUE INDEX sat_beam_freqplan_id_uindex_3 ON analysis.sat_beam_freqplan USING btree (id);
+```
+
+3. 将sql文件夹中的sat_beam_freqplan_towaixie_202204141539.sql和sat_beam_whole_towaixie_202204141539.sql导入数据库中
