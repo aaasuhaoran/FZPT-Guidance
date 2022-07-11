@@ -16,7 +16,7 @@
   + Password：ABC.123456
 
 #### 完成用户认证
-  + URL：http://202.106.0.20/
+  + URL：http://202.106.0.20:90/
   + Username：'name'@spacechina.com / 'name'@chinasatcom.com（入职时会告知）
   + Password：使用初始密码登录后自行修改
   + Note
@@ -70,6 +70,9 @@
     + [APSTAR-卫星的诞生](https://www.apstar.com/cn/apstar-video/birth-of-satellite/)
     
 ## 第1课-熟悉并构建研发环境
+### 协同开发环境构建
+请参照[研发环境构建指北](./guidance/services.md)完成代码管理和文件管理环境构建。
+
 ### 个人开发环境构建
 #### **Python**环境构建
 1. 安装Python（Anaconda Python与原生Python*二选一*即可）
@@ -97,15 +100,19 @@
 #### **VUE**开发环境构建
 1. 安装[Node.js](http://nodejs.cn/download/)
 2. 设置全局依赖包存放路径和缓存文件路径
-   + 设置缓存文件路径：`npm config set cache "D:\'installPath'\nodejs\node_cache"`
-   + 全局依赖包存放路径：`npm config set prefix "D:\'installPath'\nodejs\node_global"`
+   + 设置缓存文件路径：<br/>
+     `npm config set cache "D:\'installPath'\nodejs\node_cache"`
+   + 全局依赖包存放路径：<br/>
+     `npm config set prefix "D:\'installPath'\nodejs\node_global"`
 3. 安装cnpm（淘宝镜像）<br/>
    `npm install -g cnpm --registry=https://registry.npm.taobao.org`
 4. 安装**VUE**<br/>
    `cnpm install vue -g`
 5. 安装**VUE-CLI**脚手架
-   + 安装3.0以下版本：`cnpm install vue-cli -g`
-   + 安装3.0以上版本：`cnpm install -g @vue/cli`
+   + 安装3.0以下版本：<br/>
+     `cnpm install vue-cli -g`
+   + 安装3.0以上版本：<br/>
+     `cnpm install -g @vue/cli`
    + [调整VUE版本](https://blog.csdn.net/weixin_43279985/article/details/104841143)
 6. 使用**VUE-CLI**创建项目
    + 3.0以下版本vue-cli创建项目：`vue init webpack projectName`
@@ -113,5 +120,5 @@
    + [如何创建VUE项目](https://www.cnblogs.com/plBlog/p/13968242.html)
    + [VITE安装及创建项目](https://blog.csdn.net/bakelFF/article/details/124672187)
 
-### 协同开发环境构建
-请参照[研发环境构建指北](./guidance/services.md)完成代码管理和文件管理环境构建。
+#### **MATLAB + STK**开发环境构建
+   [MATLAB与STK联合调试仿真环境配置](https://zhuanlan.zhihu.com/p/268379035)
