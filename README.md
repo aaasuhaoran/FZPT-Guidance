@@ -154,4 +154,8 @@
 | 5   | 中国卫通卫星资源管理系统      | http://172.16.21.70:8888/admin/#/login         |用户名：kuangyiling<br/>密码：123123|
 | 6   | 卫星链路计算系统             | http://172.16.22.33:8080/sat/login/init.action |用户名：liufeifei2<br/>密码：798016|
 
+### 辅助性资料参考
++ [全球卫星运营商门户及行业动态数据获取网站](./guidance/websites.md)
++ [全球地理区划分布](./guidance/regional_division.md)
+
 ## 预祝工作开心，共同成长！
