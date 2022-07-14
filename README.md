@@ -157,7 +157,7 @@
 ### 辅助性资料参考
 + [全球卫星运营商门户及行业动态数据获取网站](./guidance/websites.md)
 + [常用软件使用过程中出现的问题及解决方式](./guidance/solutions.md)
-+ [开源软件及架构白名单](./guidance/softwares.md)
++ [开源软件及架构白名单](./guidance/open_sources.md)
 + [全球地理区划分布](./guidance/regional_division.md)
 
 ## 预祝工作开心，共同成长！
