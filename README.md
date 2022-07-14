@@ -77,6 +77,9 @@
     + [APSTAR-卫星的诞生](https://www.apstar.com/cn/apstar-video/birth-of-satellite/)
     
 ## 第1课-熟悉并构建研发环境
+### 新手礼包
+[点击此处获取新手大礼包~!!!](http://172.16.67.33:8081/)
+
 ### 协同开发环境构建
 请参照[研发环境构建指北](./guidance/services.md)完成代码管理和文件管理环境构建。
 
