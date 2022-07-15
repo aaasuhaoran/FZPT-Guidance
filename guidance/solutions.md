@@ -22,7 +22,7 @@
    ```
    Kill 进程号（注意替换）
    ```
-   ![img_1.png](images/UBUNTU下查找占用端口并关闭.png)
+   ![UBUNTU下查找占用端口并关闭.png](images/UBUNTU下查找占用端口并关闭.png)
 
 ### Anaconda
 #### Anaconda长时间运行后无法关闭

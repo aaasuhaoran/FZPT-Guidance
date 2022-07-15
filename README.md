@@ -79,6 +79,14 @@
 ## 第1课-熟悉并构建研发环境
 ### 新手礼包
 [点击此处获取新手大礼包~!!!](http://172.16.67.33:8081/)
+#### 推荐软件清单
++ [Everything](https://www.voidtools.com/zh-cn/)（基于名称快速定位文件和文件夹）
+  + [Listary](https://www.listary.com/)（Windows系统文件定位/搜索辅助软件，**平替品**）
+  + [uTools](https://www.u.tools/)（程序快速启动器，**平替品**）
++ [Resilio Sync](https://bittorrent-sync-windows.en.softonic.com/)（全平台多设备文件同步/传输终极产品）
++ [Github Desktop](https://desktop.github.com/)（Github及Git管理桌面版工具）
++ [Free Download Manager](https://www.freedownloadmanager.org/zh/)（多功能下载和管理工具）
++ 
 
 ### 协同开发环境构建
 请参照[研发环境构建指北](./guidance/services.md)完成代码管理和文件管理环境构建。
@@ -157,18 +165,18 @@
 ![系统架构设计与建设规划](guidance/images/系统架构设计与建设规划.png)
 
 ### 仿真平台、Demo系统及兄弟部门平台链接
-| ID  | Platform                     | URL                                            |     Remark     |
-|-----|:-----------------------------|:-----------------------------------------------|:--------------|
-| 1   | 星地一体化设计仿真验证平台     | http://172.16.67.32:8095/                      |                |
-| 2   | 机载通信保障推演              | http://172.16.67.32:8101/                      |           |
-| 3   | 转星方案辅助决策系统          | http://172.16.67.32:8100/                      |   |
-| 4   | 频率和轨道资源信息管理系统     | http://172.16.67.32:8080/chinasat/             | 用户名：admin<br/>密码：1 |
-| 5   | 中国卫通卫星资源管理系统      | http://172.16.21.70:8888/admin/#/login         |用户名：kuangyiling<br/>密码：123123|
-| 6   | 卫星链路计算系统             | http://172.16.22.33:8080/sat/login/init.action |用户名：liufeifei2<br/>密码：798016|
+| ID  | Platform      | URL                                            | Remark                        |
+|-----|:--------------|:-----------------------------------------------|:------------------------------|
+| 1   | 星地一体化设计仿真验证平台 | http://172.16.67.32:8095/                      |                               |
+| 2   | 机载通信保障推演      | http://172.16.67.32:8101/                      |                               |
+| 3   | 转星方案辅助决策系统    | http://172.16.67.32:8100/                      |                               |
+| 4   | 频率和轨道资源信息管理系统 | http://172.16.67.32:8080/chinasat/             | 用户名：admin<br/>密码：1            |
+| 5   | 中国卫通卫星资源管理系统  | http://172.16.21.70:8888/admin/#/login         | 用户名：kuangyiling<br/>密码：123123 |
+| 6   | 卫星链路计算系统      | http://172.16.22.33:8080/sat/login/init.action | 用户名：liufeifei2<br/>密码：798016  |
 
 ### 辅助性资料参考
-+ [全球卫星运营商门户及行业动态数据获取网站](./guidance/websites.md)
-+ [常用软件使用过程中出现的问题及解决方式](./guidance/solutions.md)
++ [全球卫星运营商门户及行业动态数据获取网站列表](./guidance/websites.md)
++ [常用软件使用过程中出现的问题及解决方式（持续完善...）](./guidance/solutions.md)
 + [开源软件及架构白名单](./guidance/open_sources.md)
 + [全球地理区划分布](./guidance/regional_division.md)
 
