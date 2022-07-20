@@ -78,7 +78,12 @@
     
 ## 第1课-熟悉并构建研发环境
 ### 新手礼包
-[点击此处获取新手大礼包~!!!](http://172.16.67.33:8081/)
+[点击此处获取新手大礼包~!!!](http://172.16.67.32:80)
+
+文件下载可以通过Xftp进行下载，连接方式为：
+  + 主机:172.16.67.32
+  + 端口：21
+  + 登录方式：FTP匿名登陆
 #### 推荐软件清单
 + [Everything](https://www.voidtools.com/zh-cn/)（基于名称快速定位文件和文件夹）
   + [Listary](https://www.listary.com/)（Windows系统文件定位/搜索辅助软件，**平替品**）
@@ -86,7 +91,9 @@
 + [Resilio Sync](https://bittorrent-sync-windows.en.softonic.com/)（全平台多设备文件同步/传输终极产品）
 + [Github Desktop](https://desktop.github.com/)（Github及Git管理桌面版工具）
 + [Free Download Manager](https://www.freedownloadmanager.org/zh/)（多功能下载和管理工具）
-+ 
++ [Xshell](https://www.freedownloadmanager.org/zh/)（多功能下载和管理工具）
++ [Xftp](https://www.freedownloadmanager.org/zh/)（SFTP、FTP 文件传输软件）
++ [VNC® Viewer](https://www.realvnc.com/en/connect/download/viewer/)(远程控制软件)
 
 ### 协同开发环境构建
 请参照[研发环境构建指北](./guidance/services.md)完成代码管理和文件管理环境构建。
